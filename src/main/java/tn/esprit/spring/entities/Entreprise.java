@@ -82,6 +82,11 @@ public class Entreprise implements Serializable{
 		this.departements.add(departement);
 	}
 
+	@Override
+	public String toString() {
+		return "Entreprise [id=" + id + ", name=" + name + ", raisonSocial=" + raisonSocial + "]";
+	}
+
 
 
 
