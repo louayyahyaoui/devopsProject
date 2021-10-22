@@ -61,7 +61,7 @@ public class Employe implements Serializable {
 	
 	
 	public Employe() {
-		super();
+		
 	}
 	
 	public Employe(String nom, String prenom, String email, boolean isActif, Role role) {
@@ -142,6 +142,13 @@ public class Employe implements Serializable {
 
 	public void setTimesheets(List<Timesheet> timesheets) {
 		this.timesheets = timesheets;
+	}
+
+	@Override
+	public String toString() {
+		return "Employe [id=" + id + ", prenom=" + prenom + ", nom=" + nom + ", email=" + email + ", isActif=" + isActif
+				+ ", role=" + role + ", departements=" + departements + ", contrat=" + contrat + ", timesheets="
+				+ timesheets + "]";
 	}
 	
 	
