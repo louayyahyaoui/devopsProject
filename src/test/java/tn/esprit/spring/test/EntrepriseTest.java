@@ -26,7 +26,7 @@ public class EntrepriseTest {
 
 	@Before
 	public void init() {
-		L.info("***startup test***");
+		L.info("****startup test****");
 		Entreprise entreprise = new Entreprise("Esprit", "12");
 		Departement departemet = new Departement("spring");
 		Entp = EntprService.ajouterEntreprise(entreprise);
