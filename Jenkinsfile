@@ -11,6 +11,11 @@ pipeline {
                     url: "https://github.com/jmaiiomar/devopsProject.git";
             }
         }
+        stage('Run Unit Tests') {
+            steps {
+                echo 'Run unit tests from the source code' 
+            }
+        }
 
         stage("Build") {
             steps {
