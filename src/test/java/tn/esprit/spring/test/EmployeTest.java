@@ -28,7 +28,7 @@ public class EmployeTest {
 	EntrepriseServiceImpl EntrpService;
 	
 	public  int idEmp;
-	public  int idDep;
+	public  		Departement idDep;
 	
 
 	
@@ -51,9 +51,9 @@ public class EmployeTest {
 		EmplService.mettreAjourEmailByEmployeId("sofien.updated@esprit.tn",idEmp);
 		
 		L.info("affecte employe a departement :");
-		EmplService.affecterEmployeADepartement(idEmp,idDep);
+		EmplService.affecterEmployeADepartement(idEmp,idDep.getId());
 		L.info("desaffecte employe a departement :");
-		EmplService.desaffecterEmployeDuDepartement(idEmp,idDep);
+		EmplService.desaffecterEmployeDuDepartement(idEmp,idDep.getId());
 		
 	
 	}
@@ -64,7 +64,7 @@ public class EmployeTest {
 		
 		EmplService.deleteEmployeById(idEmp);
 		L.info("Delete departement");
-		EntrpService.deleteDepartementById(idDep);
+		EntrpService.deleteDepartementById(idDep.getId());
 		
 		L.info("End");
 		
