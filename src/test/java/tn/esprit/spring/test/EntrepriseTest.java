@@ -31,7 +31,7 @@ public class EntrepriseTest {
 		Departement departemet = new Departement("spring");
 		Entp = EntprService.ajouterEntreprise(entreprise);
 		Dep = EntprService.ajouterDepartement(departemet);
-		L.info(" Entreprise ajoute: " + Entp);
+		L.info(" Entreprise ajoutee: " + Entp);
 		L.info(" Departemnet ajoute: " + Dep);
 
 	}
