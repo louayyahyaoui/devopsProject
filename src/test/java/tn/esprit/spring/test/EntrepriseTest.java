@@ -38,7 +38,7 @@ public class EntrepriseTest {
 
 	@Test
 	public void testaffecterDepartementAEntreprise() {
-		L.info("***test***");
+		L.info("***testt***");
 		EntprService.affecterDepartementAEntreprise(Dep.getId(), Entp.getId());
 		Dep=EntprService.getDepartementById(Dep.getId());
 		L.info("Departement modifie : "+Dep);
