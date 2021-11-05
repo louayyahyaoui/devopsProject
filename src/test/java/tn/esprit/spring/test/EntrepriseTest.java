@@ -32,7 +32,7 @@ public class EntrepriseTest {
 		Entp = EntprService.ajouterEntreprise(entreprise);
 		Dep = EntprService.ajouterDepartement(departemet);
 		L.info(" Entreprise ajoutee: " + Entp);
-		L.info(" Departemnet ajoute: " + Dep);
+		L.info(" Departemnet ajoutee: " + Dep);
 
 	}
 
