@@ -2,8 +2,10 @@ node{
     stage('SCM checkout'){
       git 'https://github.com/jmaiiomar/devopsProject'
     }
-    stage('Compile-Package'){
-      sh 'mvn package'
+    stage('git'){
+      steps{
+        git branch:'master', url: 'https://github.com/jmaiiomar/devopsProject.git'
+      }
     }
 
 }
