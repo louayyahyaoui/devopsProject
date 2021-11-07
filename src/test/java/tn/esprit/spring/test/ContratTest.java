@@ -45,7 +45,7 @@ public class ContratTest {
         L.info("startup - Add a new Conrat");
         Date current = new Date();
         Contrat contrat= new Contrat(current,"CDD",2000);
-        assertNull(referenceContrat=EmplService.ajouterContrat(contrat)); // JUnit assertion
+        referenceContrat=EmplService.ajouterContrat(contrat); // JUnit assertion
 
         L.info("Finish - Contrat added in @Test with reference ==> : " + referenceContrat);
     }
