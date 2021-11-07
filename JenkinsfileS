@@ -1,9 +1,11 @@
 pipeline{
     agent any
-    stage('git'){
-      steps{
-        git branch:'master', url: 'https://github.com/jmaiiomar/devopsProject.git'
-      }
-    }
-
+    stages{
+    
+        stage('git'){
+          steps{
+            git branch:'master', url: 'https://github.com/jmaiiomar/devopsProject.git'
+          }
+        }
+     }
 }
