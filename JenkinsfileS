@@ -1,7 +1,5 @@
-node{
-    stage('SCM checkout'){
-      git 'https://github.com/jmaiiomar/devopsProject'
-    }
+pipeline{
+    agent any
     stage('git'){
       steps{
         git branch:'master', url: 'https://github.com/jmaiiomar/devopsProject.git'
