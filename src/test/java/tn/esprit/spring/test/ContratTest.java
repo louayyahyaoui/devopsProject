@@ -17,6 +17,8 @@ import tn.esprit.spring.services.EmployeServiceImpl;
 
 import java.util.Date;
 
+import static org.junit.Assert.assertNull;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -43,7 +45,8 @@ public class ContratTest {
         L.info("startup - Add a new Conrat");
         Date current = new Date();
         Contrat contrat= new Contrat(current,"CDD",2000);
-        referenceContrat=EmplService.ajouterContrat(contrat);
+        assertNull(referenceContrat=EmplService.ajouterContrat(contrat)); // JUnit assertion
+
         L.info("Finish - Contrat added in @Test with reference ==> : " + referenceContrat);
     }
 
@@ -55,5 +58,20 @@ public class ContratTest {
         Contrat contrat= new Contrat(current,"CDD",2000);
         referenceContrat=EmplService.ajouterContrat(contrat);
         L.info("Finish - Contrat added in @After with reference ==> : " + referenceContrat);
+    }
+
+    @Test
+    public void deleteTestContrat() {
+
+        try {
+            L.info("----Start Test--- ");
+            L.debug("Je vais lancer la suppression");
+            EmplService.deleteContratById(4);
+
+            L.debug("Je viens de finir l'opération du suppression.");
+
+            L.info("Out deleteContratById(4) without errors.");
+        }
+        catch (Exception e) { L.error("Erreur dans deleteContratById(4) : " + e); }
     }
 }
