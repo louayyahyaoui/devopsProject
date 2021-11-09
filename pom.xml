@@ -12,8 +12,8 @@
 	<artifactId>Timesheet</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-	<name>Timesheet-spring-boot-core-data-jpa-mvc-REST-1</name>
-	<description>Timesheet-spring-boot-core-data-jpa-mvc-REST-1</description>
+	<name>Timesheet</name>
+	<description>Timesheet</description>
 
 	<properties>
 		<java.version>1.8</java.version>
