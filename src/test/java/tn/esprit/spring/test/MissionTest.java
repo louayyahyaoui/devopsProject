@@ -12,6 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import tn.esprit.spring.entities.Departement;
 import tn.esprit.spring.entities.Mission;
+import tn.esprit.spring.entities.MissionExterne;
 import tn.esprit.spring.services.EntrepriseServiceImpl;
 import tn.esprit.spring.services.MissionServiceImpl;
 
@@ -36,7 +37,8 @@ public class MissionTest {
         Departement departemet = new Departement("devops project");
 		idDep=EntrpService.ajouterDepartement(departemet);
 		Mission miss = new Mission("mission one", "this is a description of mission one") ;
-		referenceMission = MissionService.addMission(miss);
+		MissionExterne missExterne = new MissionExterne("mission two", "this is a description of mission two", "hamza.ennour@esprit.tn", 5);
+		referenceMission = MissionService.addMission(missExterne);
 
     }
 

@@ -12,7 +12,7 @@ public interface IMissionService {
 	public List<Mission> getAllMissions();
 	public Mission getMissionById(int MissionId);
 	public List<Mission> getAllMissionByDepartment(Departement department);
-	public void assignDepartmentToMission(Departement department);
+	public void assignDepartmentToMission(Departement department,int MissionId);
 	public void assignMissionToTimeSheet(Mission mission);
 	public List<Mission> getAllMissionsByEmailFact(String email);
 	public int getSumofAverageDayRateJPQL();

@@ -61,14 +61,13 @@ public class MissionServiceImpl implements IMissionService{
 
 	@Override
 	public List<Mission> getAllMissionByDepartment(Departement department) {
-		// TODO Auto-generated method stub
+		//return missRepoistory.getMissionByDepartmentID(department.getId());
 		return null;
 	}
 
 	@Override
-	public void assignDepartmentToMission(Departement department) {
-		// TODO Auto-generated method stub
-		
+	public void assignDepartmentToMission(Departement department, int MissionId) {
+		//missRepoistory.assignDepartmentToMission(department.getId(), MissionId);
 	}
 
 	@Override
@@ -79,14 +78,16 @@ public class MissionServiceImpl implements IMissionService{
 
 	@Override
 	public List<Mission> getAllMissionsByEmailFact(String email) {
-		// TODO Auto-generated method stub
+		//return missRepoistory.getAllMissionsByEmailFact(email);
 		return null;
 	}
 
 	@Override
 	public int getSumofAverageDayRateJPQL() {
-		// TODO Auto-generated method stub
+		//return missRepoistory.getSumofAverageDayRateJPQL();
 		return 0;
 	}
+
+
 
 }
