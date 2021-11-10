@@ -37,6 +37,7 @@ public class ContratTest {
         Contrat contrat= new Contrat(current,"CDD",2000);
         referenceContrat=EmplService.ajouterContrat(contrat);
         L.info("Finish - Contrat added in @Before with reference ==> : " + referenceContrat);
+         L.info("finish - test trigger build");
     }
 
     @Test
