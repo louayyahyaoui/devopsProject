@@ -31,7 +31,7 @@ public class ContratTest {
     @Before
     public void initBefore() {
 
-        L.info("startup ---- Add a new Conrat");
+        L.info("startup -- Add a new Conrat");
         Date current = new Date();
         L.info("Create Date - Create Current Date");
         Contrat contrat= new Contrat(current,"CDD",2000);
