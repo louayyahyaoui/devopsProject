@@ -43,7 +43,7 @@ public class ContratTest {
     @Test
     public void initTest() {
 
-        L.info("startup ---- Add a new Conrat");
+        L.info("startup ---------- Add a new Conrat");
         Date current = new Date();
         Contrat contrat= new Contrat(current,"CDD",2000);
         referenceContrat=EmplService.ajouterContrat(contrat); // JUnit assertion
